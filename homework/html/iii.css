@@ -1,0 +1,10 @@
+body{
+    position:static;
+}
+div.main{
+    position:static;
+    height: 80px;
+    width:100%;
+    background-color:brown;
+    border:1px solid black;
+}
