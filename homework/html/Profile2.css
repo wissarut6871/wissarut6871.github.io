@@ -1,0 +1,278 @@
+div#container{
+    background-color:white;
+    position: relative;
+    top:-20px;
+    left:25%;
+    width:210mm;
+    height:297mm;
+    /*border:3px solid DimGrey;*/
+    padding:0;
+    /*justify-content: center;*/
+    display:grid;
+    grid-template-columns: 10% 10% 10% 10%
+                          10%  10%  10% 10% 
+                          10%  10%  ;
+    grid-template-rows: auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto                      
+                        auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto
+                        auto auto auto auto auto;
+
+     grid-gap:0;                   
+}
+div#container > div{
+    /*border:1px solid black;*/
+    position: relative;
+    
+}
+div#container > div.person{
+    /*gird-area:/1/1/10/3;*/
+    grid-area:1/1/61/4;
+    background-color:Navy;
+    display:flex;
+    flex-direction:column;
+
+
+}
+/*div#container > div.top{
+    grid-area:1/4/2/11;
+}*/
+div#container > div.mainx{
+    grid-area:2/4/60/11;
+    background-color:white;
+    border-right:1px solid black;
+}
+div#container > div.top{
+    grid-column:4/11;
+    grid-row:1/2;
+    padding:0;
+    background-color:Navy
+}
+div#container > div.buttom{
+    grid-column:4/11;
+    grid-row:60/61;
+    padding:0;
+    background-color:Navy;
+}
+div.person > div{
+    
+    width:100%;
+    height:25%;
+    /*border:1px solid red;*/
+    color:white;
+}
+div.person > div > a{
+    display:block; /*เปลี่ยนการแสดงผมเป็นแบบblock จากเป็นแบบ inline*/
+    width:90%;
+    height:45px;
+    background-color:aqua;
+    text-align:center;
+    line-height:45px;
+    border-radius: 2px;
+}
+div.person > div > a , div.person > div > a > i{
+    text-decoration:underline;
+    font-size:25px;
+    color:black;
+    font-style:bold;
+}
+div.person > div > p{
+    position:relative;
+    width:90%;
+    left:10px; 
+}
+div.contact > b{
+    display:block;
+    position:relative;
+    left:10px;
+    font-style:normal;
+    font-size:14.5px;
+    margin-top:10px;
+}
+div.contact > b > i{
+    position:relative;
+    top:4px;
+    margin-right:3px;
+}
+/*div.Hob{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+div.Hob > b{
+    display:block;
+    width:40%;
+    height:20%;
+    border:1px solid red;  
+}*/
+div.Hob > div{
+    /*display:flex;*/
+    /*flex-direction:row;*/
+    /*flex-wrap:wrap;*/
+    /*display:flex;*/
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    position:relative;
+    top:20px;
+    
+    
+}
+div.Hob > div >b{
+    display:block;
+    width:49%;
+    height:50px;
+    /*border:1px solid red;*/
+    text-align:center;
+}
+div.Hob > div >b >i{
+   position:relative;
+   top:6px;
+   left:-4px;
+}
+
+div.mainx {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto
+                           auto auto auto auto auto;
+    grid-template-rows:auto auto auto auto auto
+                       auto auto auto auto auto;
+    grid-gap:0px;
+
+       
+}
+div.mainx > div{
+    /*border:1px solid red;*/
+
+}
+div.mainx > div#work{
+    grid-area:1/2/5/11;
+
+}
+div.mainx > div#study{
+    grid-area:5/2/8/11;
+}
+
+div.mainx > div#skill{
+    grid-area:8/2/11/11;
+}
+div.mainx > div#o-ring{
+    grid-area:1/1/11/2;
+    /*background-color:burlywood;*/
+}
+div#work > span{
+    display:block;
+    width:100%;
+    height:45px;
+    background-color:aqua;
+    color:black;
+    border-radius:2px;
+    position:relative;
+    top:20px;
+    line-height:45px;
+}
+div#study > span{
+    display:block;
+    width:100%;
+    height:45px;
+    background-color:aqua;
+    color:black;
+    border-radius:2px;
+    position:relative;
+    top:20px;
+    line-height:45px;
+}
+div#skill > span{
+    display:block;
+    width:100%;
+    height:45px;
+    background-color:aqua;
+    color:black;
+    border-radius:2px;
+    position:relative;
+    top:20px;
+    line-height:45px;
+}
+
+div#skill > div.d1{
+    position:absolute;
+    width:100%;
+    
+    /*width:50px;*/
+    /*border:1px solid blue;*/
+    top:220mm;
+    display:inline-block;
+    height:40px;
+   /* margin-top:20px;*/
+    
+}
+div#skill > div.d2{
+    position:absolute;
+    width:100%;
+    
+    /*width:50px;*/
+    /*border:1px solid blue;*/
+    top:235mm;
+    display:inline-block;
+    height:40px;
+   
+    
+}
+div#skill > div.d3{
+    position:absolute;
+    width:100%;
+    
+    /*width:50px;*/
+    /*border:1px solid blue;*/
+    top:250mm;
+    display:inline-block;
+    height:40px;
+   
+    
+}
+div#skill > div.d4{
+    position:absolute;
+    width:100%;
+    
+    /*width:50px;*/
+    /*border:1px solid blue;*/
+    top:265mm;
+    display:inline-block;
+    height:40px;
+   
+    
+}
+
+
+
+
+
+
+
+
+div#skill > p{
+    position:absolute;
+    padding:0;
+    height:20px;
+    width:20%;
+    left:30px;
+
+}
+div > div.max{
+    position: relative;
+    width:60%;
+    height:20px;
+    border:1px solid black;
+    left:85px;
+    top:-35px;
+}
+
+
