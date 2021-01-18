@@ -14,7 +14,7 @@ div.tit{
 }
 
 div > table {
-    font-size:40px;
+    /*font-size:40px;*/
     /*border: 2px dashed red;*/
     border-collapse:collapse;
     text-align:left;
@@ -33,6 +33,10 @@ table,th,tr{
         border:3px solid blue;
         
     }
+
+    div > table{
+        font-size:40px;
+    }
 }
 @media only screen and (min-width:320px) and (max-width:768px){
       div.container{
@@ -43,5 +47,5 @@ table,th,tr{
       div.container > div{
           border:3px solid greenyellow;
       }
-      
+    
 }
