@@ -47,5 +47,8 @@ table,th,tr{
       div.container > div{
           border:3px solid greenyellow;
       }
-    
+      div > table{
+        font-size:8px;
+        color:darkmagenta;
+    }
 }
