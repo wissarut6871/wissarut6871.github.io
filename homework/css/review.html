@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-homework-1</title>
+    <style>
+        body {
+
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        table,td,th
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+            width:50%;
+            
+            
+        }
+        table{margin-top:30px;}
+        td{text-align:left;}
+        th{text-align:center;font-size:larger;}    
+        tr+td{
+            text-align:center;
+        }
+        
+        table{
+            margin-left:auto;
+            margin-right:auto;
+        }
+        img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<img src="https://www.pimclick.com/wp-content/uploads/2018/11/pimclick-logo-clients.jpg">-->
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>question</th>
+
+                    <th>answer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CSS syntax ประกอบด้วยอะไรบ้าง</td>
+                    <td>1.Selector >> การเลือกElement <br>
+                        2.Property >> คุณสมบัติของElementที่เราเลือก เช่น สี <br>
+                        3.Value >> ค่าของคุณสมบัติ เช่นสีแดง
+                    </td>
+                </tr>
+                <tr>
+                    <td>การเขียน css มีกี่แบบ</td>
+                    <td>มีทั้งหมด 3 แบบ<br>1.lnline การเขียนไว้ในAttribute style ภายในElementที่เราจะใช้css<br>
+                        2.External การเขียนไฟท์ css แยกแล้วlink เข้ามาใน Tag line ในส่วนของ header<br>
+                        3.Embed การสร้าง css ในfile HTML ภายใน style ในส่งของ Hardox
+                    </td>
+                </tr>
+                <tr>
+                    <td>selector มีกี่แบบ</td>
+                    <td>มี 3 แบบ<br>1.กำหนดด้วยชื่อของElement เช่น div,p,h1,img<br>2.กำหนดด้วยชื่อ class ของ Element โดยใช้ จุด(.)หน้าชื่อclass เช่น .abs,div.x1,p.web1<br>
+                         3.กำหนดด้วยชื่อ id ของ Element โดยใช้ จุด(#)หน้าชื่อid เช่น #abs,div#x1,p#web1
+                    </td>
+                </tr>
+                <tr>
+                    <td>combinator มีกี่แบบอะไรบ้าง</td>
+                    <td>มี 4 แบบ<br>1.ใช้เครื่องหมาย > จะทำงานกับElement ชั้นแรก(ชั้นลูก)และไม่ทำงานกับElement(หลาน-เหลน) เช่น div > p,div > div ,span > a<br>
+                                   2.ใช้เครื่องหมาย วรรณวะ(ช่องว่าง) จะทำงานกับทุกElementและทุกระบบชั้น(ลูก-หลาน-เหลน)  ของ elemant ที่เรากำหมดหน้าหน้าช่องว่าง เช่น div p,
+                                   div h3,span a<br>
+                                   3.ใช้เครื่องหมาย , จะทำงานกับทุกElementที่ถูกคั่นโดย "," นี้ เช่น  h1,h2,h3  ,div#co,div.solo<br>
+                                   4.ใช้เครื่องหมาย  จะทำงานกับElementทุกตัวที่อยู่ถัดออกไปและไม่ทำงานกับElementที่อยู่ในชั่นลูกหรือตำกว่านั้น เช่น h1 
+                                   
+                                       </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
