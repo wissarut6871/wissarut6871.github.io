@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางCa</title>
+    <style>
+        body{Position:static;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        div.container{
+           /* position:absolute;*/
+           position:relative;
+           margin:30px;
+           /*margin-bottom:auto;
+           margin-top:auto; << แบบนี้ไม่ได้เพราะส่วนแนวแกน Y ของมันเลื่อนได้ไม่จำกันทำให้ margin-top:auto: margin-bottom:auto ไม่อยู่กึ่งกลางของหน้าจอ ***element นี้มี parentElement*/
+           margin-top:50px;
+           margin-right:auto;
+           margin-left:auto;
+            height:120mm;
+            width:200mm;
+            border:8px solid gainsboro;
+        }
+        div.container > div.room{
+            position:relative;
+            height:100.8%;
+            width:100.8%;
+            left:-0.6%;
+            top:-0.8%;
+            border:2px solid black;
+            margin:0px;
+            border-radius: 3px;
+        }
+        div.container > div.room > div.ca{
+            position:relative;
+            height:90%;
+            width:90%;
+            margin-right:auto;
+            margin-left:auto;
+            margin-top:5mm;
+            margin-bottom:auto;
+          
+        }
+        b,a{
+            position: absolute;;
+           
+        }
+        a{left:25%;}
+        button.q{
+            position:relative;
+            left:2mm;
+            height:80%;
+            text-align:center;
+            border-radius:1mm;
+            background-color:gold;
+
+        }    
+        div.ca > p{
+            height:10mm;
+            width:100%;
+            background-color:grey;
+            text-align: left;
+            line-height:10mm;
+            border-radius: 0.5mm;
+        }
+        input[type="text"]{
+            width:170px;
+            height:5mm;
+        }
+        a > select{
+            position: absolute;
+            height:7mm;
+            width:180px;
+            display:block;
+        }
+        button.but{
+            position: relative;;
+            left:185px;
+            height:100%;
+            top:1mm;
+            
+       
+        }
+        sup{color:red}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+           <div class="room">
+                <div class="ca">
+                    <b>Name<sup>*</sup>:</b> <a><input type="text"><button class="q">?</button></a>
+                    <br><br>
+                    <b>Tab Text<sup>*</sup>:</b> <a><input type="text"><button class="q">?</button></a>
+                    <br><br>
+                    <b>URL<sup>*</sup>:</b> <a>http://wwww.wizehive.com/webform/<input type="text" style="width:90px;"></a>
+                    <br>
+                    <p>FORM SETUP</p>
+                    
+                    <b>Form:</b> <a><select><option></option>
+                        <option></option></select><button class="but">Edit</button></a>
+                        <br><br>
+                        <b>Logo:</b> <a><i>no logo uploaded<i><button style="position:relative;left:71px;">Upload Logo</button></a>
+                        <br><br>
+                        <b>Template Text:</b> <a><select><option>Englist</option>
+                            <option>Englist</option></select><button class="but">Edit</button></a>
+                        <br><br>
+                        <b>Review Form:</b> <a><select><option>Default</option>
+                            <option>Default</option></select></a>
+                            <br><br>
+                            <b>Review Score:</b> <a><select><option>Rating</option>
+                                <option>Rating</option></select><button class="but">Edit</button></a>
+                         <br><br>
+                         <b>Scoring Type:</b> <a><select style="width:90px"><option>Average</option>
+                            <option>Average</option></select></a>
+                            <br><br>
+                            <b>Max Score:</b> <a><input type="text" value="4.00"></a>
+                </div>
+           </div>
+    </div>
+</body>
+</html>
