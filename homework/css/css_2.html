@@ -14,10 +14,27 @@
             margin-left:auto;
             margin-right:auto;
         }
+        table{margin-top:30px;}
         th{font-size:20px;}
+
         td,th{
            padding:10px;
+           font-style:bold;
         }
+        table.unit{
+            position:absolute; 
+            position:relative;
+            border-color:grey;
+            margin-top:10px;
+            
+           
+        }
+        table.unit th{font-size:15;text-align:center;}
+        table.unit th,table.unit td{
+            border-color:grey;
+           
+        }
+        
     </style>
 </head>
 <body>
@@ -34,7 +51,64 @@
                    <td>property คือ คุณสมบัติของelement เช่น กว้าง,ยาว,สี<br> ส่วน value คือกำหนดค่าชองคุณสมบัติ เช่น สีแดง,100px</td>
                </tr>
                <tr>
-                   
+                   <td>Property ที่สอนใน precame มีกี่กลุ่มอะไรบ้าง</td>
+                   <td>มี 5 กลุ่ม<br>Property for content>>กลุ่มที่ใช้กับเนื่อหาภายใน Element เช่น color,size,width<br>Property for border>>กลุ่มที่ใช้กับเส้นของของ elemant เช่น border
+                       <br>Property for padding>>กลุ่มที่ใช้กับpadding(ระยะห่างระหว่างเนื่อหากับของelement) เช่น padding-left,padding-right<br>Property for margin>>กลุ่มที่ใช้ระยะห่างระหว่าง Element เช่น margin-right,margin-left<br>
+                      Property for Element>>กลุ่มที่ใช้กับElement(ทั้งหมดของElement) เช่น display,height,position
+                
+                </td>
+               </tr>
+               <tr>
+                   <td>value unitมีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร</td>
+                   <td>
+                       มี 2 ประเภทคือ Absolute lenghts(ไม่สัมพันธ์) กับ Relative lenghts(สมพันธ์)
+                       <table class="unit">
+                           <thead>
+                                <tr>
+                                    <th>Absoluete lenghts</th>
+                                    <th>Relative lenghts</th>
+                                </tr>
+                           </thead>
+                           <tbody>
+                                <tr>
+                                    <td>cm >> เชนติเมตร</td>
+                                    <td>em >> เท่าขนาดของfontของ elemant</td>
+                                </tr>
+                                <tr>
+                                    <td>mm >> มิลลิเมตร</td>
+                                    <td>ex >> เท่ากับความสูงของfont element</td>
+                                </tr>
+                                <tr>
+                                    <td>in >> นิ้ว</td>
+                                    <td>ch >> ความกว้างของตัวหนังสือใน parent element</td>
+                                </tr>
+                                <tr>
+                                   <td>px >> พิกเซล 1/96 นิ้ว</td>
+                                   <td>rem >> เท่าขนาดfontของ root element</td>
+                                </tr>
+                                <tr>
+                                    <td>pt >> พอยท์ 1/72 in</td>
+                                    <td>vh >> %ความสูงของหน้าจอ</td>
+                                </tr>
+                                <tr>
+                                    <td>pc >> พิคาล 1/12 นิ้ว</td>
+                                    <td>vw >> %ความกว้างของหน้าจอ</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>vmin >> %ของ view point ต่ำสุด</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>vmax >> %ของ view point สูงสุด</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>% >> ของ parent element(element พ่อแม่)</td>
+                                </tr>
+                           </tbody>
+                       </table>
+                   </td>
                </tr>
            </tbody>
        </table>
