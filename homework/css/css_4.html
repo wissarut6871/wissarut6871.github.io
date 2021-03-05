@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0px;
+            width: 50vw;
+            /*width:50%; */
+        }
+
+        td>b {
+            position: relative;
+            font-size: 7px;
+            position: relative;
+            left: 20px;
+
+        }
+        td.cen{text-align:center;}
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>คำถาม</th>
+            <th>คำตอบ</th>
+        </tr>
+
+        <tr>
+            <td class="cen">value ใน display property มีอะไรบ้าง</td>
+            <td>มี 5 แบบ<br>
+                1.inline(ตามcontent)<br>
+                <b>-ข้อความไม่ขึ้นบรรทัดใหม่ จะขึ้นเมื่อความยาวของข้อความเต็มบรรทัด</b>
+                <br>
+                <b>-ความกว้าง,ความยาวจะแปรผันตามขนาดของข้อความ</b>
+                <br>
+                <b>-คุณสมบัติ width,height,margin,padding,ฯไม่มีผลกับdisplayแบบinline</b>
+                <br>
+                2.block(กล่องข้อความ)<br>
+                <b>-ขึ้นบรรทัดใหม่ ถึงแม้จะข้อความจะยาวไม่เต็มแถวก็ตาม</b>
+                <br>
+                <b>-คุณสมบัติ width,height,margin,padding,ฯมีผลกับblock</b>
+                <br>
+                3.inline-block<br>
+                <b>-ทุกอย่างเหมื่อนกับdisplay:inlineแต่สามารถปรับแต่งขนาดได้(คุณสมบัติ
+                    width,height,margin,padding,ฯมีผล)</b>
+                <br>
+                4.none(ไม่แสดง)<br>
+                <b>-เมื่อกำหนดแบบ none elementนั้นจะไม่แสดงบนหน้าจอ</b>
+                <br>
+                5.grid(ตาราง)<br>
+                <b>-แสดงผลแบบตาราง,กำหนดคอลัมพ์,แถว,สามารถผสานเซลล์ได้,มีรูปแบบคงที่</b>
+                <br>
+                6.flex(ไหล)<br>
+                <b>-เรียงelementไปตามแถว เมื่อเต็มแถวก็ไหลไปแถวต่อไป</b>
+                <br>
+                <b>สามารถกำหมดทิศทางการไหลของelement ได้</b>
+            </td>
+        </tr>
+        <tr>
+            <td class="cen">grid และ flex แตงต่างกันอย่างไร</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

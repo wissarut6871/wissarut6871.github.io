@@ -1,0 +1,83 @@
+body{
+   font-family:Helvetica, sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+}
+div.topmanu{
+    position:absolute;
+    left:0px;
+    width:100vw;
+    height:36px;
+    background-color:#F5F5F5;
+    font-size:12px;
+    line-height:36px;
+    margin:0px;
+    top:0px;
+    background-image:url(https://github.com/kanir-l/codecamp6-JS/blob/master/CODECAMP6_JS/CSS/img/nike-hero.jpg);
+   
+}
+div.topmanu > div.top_submanu{
+    position:absolute;
+    left:83%;   
+    /*border:1px solid black;*/
+    width:400px;
+}
+div.topmanu > div.top_submanu > a{
+    margin-left: 10px;
+    color:#111111;
+    /*color:red;*/
+    font-size:13px;
+    /*font-weight:bold;*/
+    font-family:Helvetica;
+   
+}
+div.topmanu > div.top_submanu > a:hover{
+    opacity:70%;
+}
+div.topmanu img:hover{
+    opacity: 30%;
+}
+div.topmanu > div.topmanu_img{
+    position:relative;
+    /*border:1px solid black;*/
+    width:30px;
+    height:100%;
+    left:50px;
+   
+}
+div.topmanu > div.topmanu_img  img{
+    position:relative;
+    width:24px;
+    height:24px;
+    top:6px;
+}
+div.topmanu > div.topmanu_tap{
+    position:relative;
+    border:1px solid grey;
+    width:230px;
+    background-color:#ffffff;
+    border-radius:8px;
+    left:76%;
+    font-size: 15px;
+    color:grey;
+    opacity:0%;
+    
+}
+div.topmanu_tap>h3{
+    margin-left:20px;
+    color:black;
+}
+div.topmanu_tap >ol{
+    margin-left:20px;
+    
+}
+div.top_submanu:hover + div + div{
+    /*opacity:100%;*/
+    /*background-color:red;*/
+    opacity:100%;
+
+}
