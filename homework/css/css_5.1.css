@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div.container{
+    display:flex;
+    flex-direction:column;
+    /*justify-content:center;*/
+    align-items:center;
+    
+}
+div.container  > div{
+    /*height:100px;
+    width:100px;*/
+    /*border:1px solid black;*/
+    
+}
+div.topmanu{
+    width:100%;
+    height:36px;
+    background-color:#f5f5f5
+}
+div.topmanu > div.logo{
+    position:absolute;
+    width:24px;
+    height:24px;
+    top:6px;
+    left:50px;
+}
+div.topmanu > div.logo img{
+    width:100%;
+    height:100%;
+}
+div.topmanu > div.logo:hover{
+    opacity: 30%;
+}
+div.topmanu > div.submanu{
+    position:absolute;
+    top:6px;
+    left:70%;
+    width:500px;
+    height:24px;
+    /*border:1px solid black;*/
+    font-family:Helvetica, sans-serif;
+    font-size:13px;
+    color:#111111;
+    /*line-height:24px;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+}
+div.topmanu > div.submanu > a{
+    margin-left:20px;
+}
+div.topmanu > div.submanu  >a.line{
+    /*color:red;*/
+    border-left:1.5px solid #111111;
+    border-right:1.5px solid #111111;
+    padding-left:10px;
+    padding-right:10px;
+}
+div.topmanu > div.submanu > a:hover{
+    opacity: 60%;
+}
+/***************************mainmanu**********************/
+div.mainmanu{
+    width:100%;
+    height:60px;
+    background-color:#ffffff;
+    /*border:1px solid black;*/
+
+}
+div.mainmanu>div.logo{
+    width:60px;
+    height:100%;
+    position:absolute;
+    left:50px;
+    color:#111111;
+}
+div.mainmanu > div.logo > img{
+    position:absolute;
+    width:100%;
+    height:20px;
+    top:20px;
+    
+}
+    
+div.mainmanu > div.logo > img:hover{
+    opacity:30%;
+}
+div.mainmanu > div.manu{
+    position:absolute;
+    left:40%;
+    height:60px;
+    width:500px;
+    /*border: 1px solid black;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    color:#111111;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+div.mainmanu > div.manu >a{
+    display:block;
+    height:100%;
+    line-height:60px;
+   /* border: 1px solid black;*/
+    padding-left:16px;
+    padding-right:16px; 
+}
+div.mainmanu > div.manu >a >b{
+    display:block;
+    position:relative;
+    width:100%;
+    height:2px;
+   top:-2px;
+    background-color:black;
+    opacity: 0%;
+
+}
+div.mainmanu > div.manu >a:hover >b{
+    opacity:100%;
+}
+
+div.mainmant > div.textbox{
+    
+}
