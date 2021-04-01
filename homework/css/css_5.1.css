@@ -6,8 +6,8 @@
 div.container{
     display:flex;
     flex-direction:column;
-    /*justify-content:center;*/
-    align-items:center;
+    /*justify-content:center;*/ /*จัดเรียงตามแกนหลัก*/
+    align-items:center; /*จัดแนวตั้งข้ามแกนหลัก*/
     font-family:Arial, Helvetica, sans-serif;
 }
 div.container  > div{
@@ -249,3 +249,203 @@ div.container > div.man_manu >a.man{
     left:0px;
     left:50px;
 }
+/****************pic_main******************/
+div.container > div.pic_main{
+    width:100%;
+    height:856px;
+    /*border:1px solid black;*/
+}
+div.container > div.pic_main >img{
+    /*position:absolute;*/
+    position:relative;
+    left:50px;
+    width:94.5%;
+    right:50px;  
+}
+/****************รองเท้าเด่น*************/
+div.container > div.dan{
+    /*border:1px solid black;*/
+    width:94.5%;
+    height:40px;
+    margin-top:150px;
+    left:50px;
+    display:flex;
+   align-items:flex-end;
+}
+div.container > div.dan > a{
+    color:#111111;
+    text-decoration:none;
+    font-size:24px;
+    
+}
+/*****************sile****************/
+div.container > div.side{
+    /*border:1px solid black;*/
+    margin-top:20px;
+    width:94.5%;
+    height:150mm;
+    white-space:nowrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
+
+}
+div.container > div.side > div{
+    position:relative;
+    display:inline-block;
+    height:100%;
+    width:32.63%;
+   /* border:1px solid black;*/
+    margin-right:12px;
+    
+}
+div.container > div.side > div > img{
+    position:relative;
+    width:100%;
+    height:87%;
+    display:block;
+}
+div.container > div.side > div > p.p1{
+ /*  border:1px solid black;*/
+   position:relative;
+   width:80%;
+   display:inline-block;
+   margin-top:20px;
+   font-size:16px;
+   color:#111111;
+   
+   
+}
+div.container > div.side > div > p.p2{
+    /*border:1px solid black;*/
+    position:relative;
+    width:19%;
+    display:inline-block;
+    margin-top:20px;
+    font-size:16px;
+    color:#111111;
+    text-align:right;
+ }
+ div.container > div.side > div >p.p3{
+     /* border:1px solid black;*/
+      position:relative;
+      display:block;
+      width:50%;
+      color:#757575;
+      font-size:16px;
+ }
+
+ /************************ห้ามพลาด*************************/
+ div.container > div.notp{
+    /* border:1px solid black;*/
+     width:94.5%;
+     height:24mm;
+     display:flex;
+     flex-direction:row;
+     align-items:flex-end;
+ }
+ div.container > div.notp > p{
+     color:#111111;
+     font-size:24px;
+     display:inline;
+     /*border:1px solid black;*/
+ }
+ /**********************รูป-ห้ามพลาด*********************/
+ div.container > div.notp-box{
+    /* border:1px solid black;*/
+     height:250mm;
+     width:94.5%;
+     margin-top:23px;
+     white-space:nowrap;
+ }
+ div.container > div.notp-box >div{
+     /*border:1px solid black;*/
+     width:49.5%;
+     height:100%;
+     display:inline-block;
+    /* position:absolute;*/
+     margin-right:10px;
+     white-space:nowrap;
+ }
+ div.container > div.notp-box > div > img{
+     position:relative;
+     width:100%;
+     height:100%;
+     display:inline-block;
+  
+ }
+ /*******************กำลังฮิต*************/
+ div.container > div.hit{
+     /*border:1px solid black;*/
+     width:94.5%;
+     height:250mm;
+     margin-top:90px;
+ }
+ div.container > div.hit > p{
+    /* border:1px solid black;*/
+     display:block;
+     color:#111111;
+     font-size:24px;
+ }
+ div.container > div.hit > img{
+     display:block;
+     width:100%;
+     height:94%;
+     /*border:1px solid red;*/
+     margin-top:20px;
+ }
+ /**************สินค้าพื้นฐาน**************/
+ div.container > div.basic {
+     /*border:1px solid black;*/
+     width:94.5%;
+     height:200mm;
+     margin-top:90px;
+ }
+ div.container > div.basic > p{
+     display:block;
+     font-size:24px;
+     color:#111111;
+    /* border:1px solid red;*/
+
+ }
+ div.container > div.basic > div{
+    /* border:1px solid black;*/
+    /* display:inline-block;*/
+     margin-top:20px;
+     height:93%;
+     white-space:nowrap;
+ }
+ div.container > div.basic > div > div{
+    position:relative;
+    display:inline-block;
+    /*border:1px solid blue;*/
+     height:100%;
+     width:32.7%;
+     margin-right:10px;
+     
+ }
+ div.container > div.basic > div > div > img{
+     display:inline-block;
+     position:absolute;
+     width:100%;
+     height:100%;
+ }
+ div.container > div.basic > div > div > div{
+     position:absolute;
+     display:inline-block;
+     width:35mm;
+     height:10mm;
+   /*  border: 1px solid black;*/
+     text-align:center;
+     line-height:10mm;
+     background-color:#ffffff;
+     border-radius:7mm;
+     color:#111111;
+     font-size:16px;
+     left:30px;
+     top:88%;
+
+ }
+ div.container > div.basic > div > div > div:hover{
+     opacity:70%;
+     
+ }
