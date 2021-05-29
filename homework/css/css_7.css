@@ -52,3 +52,19 @@ div.logop{
     top:7mm;
     left:15mm;
 }
+div.name{
+    position:fixed;
+    /*border:1px solid black;*/
+    width: 45px;
+    height:168px;
+    top:120mm;
+    left:20mm;
+}
+div.name > h1{
+    transform:rotate(270deg);
+    color:#fc5424;
+    font-size:50px;
+    position:relative;
+    top:70px;
+
+}
