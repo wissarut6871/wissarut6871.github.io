@@ -1,3 +1,7 @@
+*{
+    padding:0;
+    margin:0;
+}
 div.about{
     position:fixed;
     /*border:1px solid black;*/
@@ -6,6 +10,7 @@ div.about{
     top:0px;
     right:60px;
     background-color:#fc5424;
+    z-index:2;
 }
 div.about > hr{
     position:relative;
@@ -13,8 +18,14 @@ div.about > hr{
     border-style: solid;
     height:0.1px;
     background-color:white;
-    top:15px;
+    top:23px;
+    /*left:5px;*/
     width:70%;
+    border:0;
+    height:1px;
+    margin-left:auto;
+    margin-right:auto;
+
 
 }
 div.about:hover{
@@ -26,11 +37,13 @@ div.about:hover{
     
 }
 div.about:hover > hr{
-    top:24px;
+    top:33px;
+ 
+    
 }
 div.about > i{
     position:relative;
-    top:18px;
+    top:30px;
     left:2px;
     color:#636363;
     font-size:14px;
@@ -38,7 +51,7 @@ div.about > i{
     font-style:normal;
 }
 div.about:hover > i{
-    top:25px;
+    top:40px;
 }
 @keyframes about{
     0%{height:30px;}
@@ -51,14 +64,18 @@ div.logop{
     height:100px;
     top:7mm;
     left:15mm;
+    z-index:2;
 }
 div.name{
     position:fixed;
     /*border:1px solid black;*/
     width: 45px;
     height:168px;
+    /*width:300px;
+    height:300px;*/
     top:120mm;
     left:20mm;
+    z-index:2;
 }
 div.name > h1{
     transform:rotate(270deg);
@@ -67,4 +84,45 @@ div.name > h1{
     position:relative;
     top:70px;
 
+}
+div.name > hr{
+    position:relative;
+    border:0;
+    height:1.5px;
+    background-color:#fc5424;
+    top:110px;
+    transform:rotate(90deg);
+    width:9mm;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#box{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    /*border:1px solid red;*/
+     align-items:center; 
+     position:absolute;
+     margin:0;
+     padding:0;
+}
+div#box > div{
+    border:1px solid black;
+    display:block;
+    /*height:100px;*/
+    width:300px;
+    height:500px;
+
+}
+div#box > div#black{
+    width:100%;
+    height:800px;
+    z-index:1;
+}
+div#box > div#black > img{
+    display:block;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    
 }
